@@ -1,0 +1,16 @@
+{
+  "name": "glumbo-discord-buy-bot",
+  "version": "2.0.0",
+  "private": true,
+  "description": "GLUMBO Discord buy alerts and signed-wallet holder verification on Ink",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.mjs",
+    "check": "node --check bot.mjs && node --check holder-verification.mjs",
+    "test": "node test.mjs",
+    "preview": "DRY_RUN=true REPLAY_LATEST=true RUN_ONCE=true node bot.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
